@@ -214,6 +214,9 @@
   .-mt-20 {
     margin-top: calc(var(--spacing) * -20);
   }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
+  }
   .mt-0\.5 {
     margin-top: calc(var(--spacing) * 0.5);
   }
@@ -279,6 +282,9 @@
   }
   .hidden {
     display: none;
+  }
+  .table {
+    display: table;
   }
   .h-3 {
     height: calc(var(--spacing) * 3);
@@ -358,9 +364,18 @@
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .-rotate-z-2 {
     --tw-rotate-z: rotateZ(calc(2deg * -1));
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -407,6 +422,10 @@
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -440,8 +459,35 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\.\.\.\/asset\/elements\.png\'\)\] {
+    background-image: url('.../asset/elements.png');
+  }
+  .bg-\[url\(\'\.\.\.\/asset\/master\.png\'\)\] {
+    background-image: url('.../asset/master.png');
+  }
+  .bg-\[url\(\'\.\.\.\/asset\/section\.png\'\)\] {
+    background-image: url('.../asset/section.png');
+  }
+  .bg-\[url\(\'\.\.\.\/asset\/wrap\.png\'\)\] {
+    background-image: url('.../asset/wrap.png');
+  }
   .bg-\[url\(\'\.\.\/asset\/elements\.png\'\)\] {
     background-image: url('../asset/elements.png');
+  }
+  .bg-\[url\(\'\.\.\/asset\/master\.png\'\)\] {
+    background-image: url('../asset/master.png');
+  }
+  .bg-\[url\(\'\.\.\/asset\/master2\.png\'\)\] {
+    background-image: url('../asset/master2.png');
+  }
+  .bg-\[url\(\'\.\.\/asset\/master3\.png\'\)\] {
+    background-image: url('../asset/master3.png');
+  }
+  .bg-\[url\(\'\.\.\/asset\/section\.png\'\)\] {
+    background-image: url('../asset/section.png');
+  }
+  .bg-\[url\(\'\.\.\/asset\/wrap\.png\'\)\] {
+    background-image: url('../asset/wrap.png');
   }
   .bg-\[url\(\'\.\/asset\/elements\.png\'\)\] {
     background-image: url('./asset/elements.png');
@@ -475,6 +521,9 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
@@ -625,6 +674,9 @@
   .italic {
     font-style: italic;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -636,6 +688,10 @@
         --tw-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-shadow-alpha), transparent);
       }
     }
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .hover\:cursor-pointer {
     &:hover {
@@ -1091,6 +1147,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1115,6 +1176,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
     }
   }
 }
