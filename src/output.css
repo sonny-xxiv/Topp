@@ -459,29 +459,8 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\'\.\.\.\/asset\/elements\.png\'\)\] {
-    background-image: url('.../asset/elements.png');
-  }
-  .bg-\[url\(\'\.\.\.\/asset\/master\.png\'\)\] {
-    background-image: url('.../asset/master.png');
-  }
-  .bg-\[url\(\'\.\.\.\/asset\/section\.png\'\)\] {
-    background-image: url('.../asset/section.png');
-  }
-  .bg-\[url\(\'\.\.\.\/asset\/wrap\.png\'\)\] {
-    background-image: url('.../asset/wrap.png');
-  }
   .bg-\[url\(\'\.\.\/asset\/elements\.png\'\)\] {
     background-image: url('../asset/elements.png');
-  }
-  .bg-\[url\(\'\.\.\/asset\/master\.png\'\)\] {
-    background-image: url('../asset/master.png');
-  }
-  .bg-\[url\(\'\.\.\/asset\/master2\.png\'\)\] {
-    background-image: url('../asset/master2.png');
-  }
-  .bg-\[url\(\'\.\.\/asset\/master3\.png\'\)\] {
-    background-image: url('../asset/master3.png');
   }
   .bg-\[url\(\'\.\.\/asset\/section\.png\'\)\] {
     background-image: url('../asset/section.png');
