@@ -458,6 +458,15 @@
   .bg-\[url\(\'\.\/asset\/wrap\.png\'\)\] {
     background-image: url('./asset/wrap.png');
   }
+  .bg-\[url\(\'\/asset\/elements\.png\'\)\] {
+    background-image: url('/asset/elements.png');
+  }
+  .bg-\[url\(\'\/asset\/section\.png\'\)\] {
+    background-image: url('/asset/section.png');
+  }
+  .bg-\[url\(\'\/asset\/wrap\.png\'\)\] {
+    background-image: url('/asset/wrap.png');
+  }
   .bg-cover {
     background-size: cover;
   }
